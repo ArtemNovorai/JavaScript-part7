@@ -11,7 +11,7 @@ if (question == true) {
 
     for (var i = 1; i <= 3; i++) {
 
-        google = parseInt(prompt('Enter the number from 0 to 5'));
+        google = prompt('Enter the number from 0 to 5');
 
         if (i == 1 && google == random) {
             prop = prop + 10;
