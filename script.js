@@ -4,13 +4,12 @@ var prop = 0;
 var google;
 
 
-if (question == true) {
+    if (question == true) {
    
-    var random = Math.round(Math.random() * 5);
-
-
     for (var i = 1; i <= 3; i++) {
-
+     
+        var random = Math.round(Math.random() * 5);
+       
         google = prompt('Enter the number from 0 to 5');
 
         if (i == 1 && google == random) {
@@ -40,7 +39,7 @@ if (question == true) {
                 alert('Thanks for the game! Your win is - ' + prop + '$');
                 break;
             }
-        } else if (i == 3 && google != random) {
+        } else if (i == 3 && google !== random) {
             question2 = confirm('You loose the game, do you want to try again ?');
             if (question2 == true) {
                 i = 0;
